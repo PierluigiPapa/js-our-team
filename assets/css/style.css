@@ -22,6 +22,46 @@ h2 {
     color: #e60164;
 }
 
-#team-container {
-    
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+ul.staff {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+ ul.staff li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: calc((100% - 80px) / 3);
+}
+
+ul.staff li .nome {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+ul.staff li .ruolo {
+    margin-bottom: 20px;
+    color: #e60164;
+    font-weight: bold;
+}
+
+ul.staff li .foto {
+    order: -1;
+    width: 70%;
+    display: block;
+    border: 10px solid #e60164;
+    border-radius: 20px;
+    box-shadow: -1px 1px 30px 0px white;
 }
