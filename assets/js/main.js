@@ -39,3 +39,7 @@ const teamMembri = [
 
 // console.log(teamMembri);
 
+for (let i = 0; i < teamMembri.length; i++) {
+    let membri = teamMembri [i]
+    console.log("Nome: " + membri.nome + ", Ruolo: " + membri.ruolo + ", Foto: " + membri.foto);
+}
