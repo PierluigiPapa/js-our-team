@@ -39,7 +39,25 @@ const teamMembri = [
 
 // console.log(teamMembri);
 
+//Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto 
 for (let i = 0; i < teamMembri.length; i++) {
     let membri = teamMembri [i]
     console.log("Nome: " + membri.nome + ", Ruolo: " + membri.ruolo + ", Foto: " + membri.foto);
 }
+
+//Stampare le stesse informazioni su DOM sottoforma di stringhe
+let teamContainer = document.getElementById("team-container");
+
+for (let i = 0; i < teamMembri.length; i++) {
+  let membri = teamMembri[i];
+
+ 
+  let memberiInfo = document.createElement("p");
+
+  
+  memberiInfo.textContent = "Nome: " + membri.nome + ", Ruolo: " + membri.ruolo + ", Foto: " + membri.foto;
+
+  
+  teamContainer.appendChild(memberiInfo);
+}
+
